@@ -9,7 +9,6 @@ import java.util.Map;
 
 /**
  * Controlador REST que expone la clave de encriptación actual.
- * En un entorno de producción, este endpoint DEBE estar protegido.
  */
 @Controller("/keys")
 public class KeyController {
