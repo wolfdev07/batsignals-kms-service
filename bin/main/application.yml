@@ -1,0 +1,6 @@
+  micronaut:
+    application:
+      name: kmsService
+    tasks:
+      scheduling:
+        enabled: true
