@@ -1,10 +1,7 @@
 package com.batsignals;
 
-
 import io.micronaut.scheduling.annotation.Scheduled;
 import jakarta.inject.Singleton;
-
-
 
 /**
  * Tarea programada para rotar la clave de encriptación periódicamente.
@@ -18,7 +15,7 @@ public class KeyRotationScheduler {
         this.keyService = keyService;
     }
 
-    @Scheduled(fixedRate = "30s")
+    @Scheduled(fixedRate = "1h")
     void rotateKey() {
         System.out.println("Disparando rotación de clave programada...");
         keyService.generateNewKey();
